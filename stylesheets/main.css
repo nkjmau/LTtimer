@@ -21,10 +21,10 @@ div#btns {
 
 div.btn {
   margin: 10px 5%;
-  padding: 10px 30px;
+  padding: 20px 30px;
   width: 20vw;
   text-align: center;
-  font-size: 18px;
+  font-size: 25px;
   display: inline-block;
 }
 
