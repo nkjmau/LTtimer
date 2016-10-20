@@ -4,15 +4,25 @@ body {
   background-color: #deb888;
 }
 
-div#btns {
+div#contents {
   margin: 10px auto;
   width: 80%;
+}
+
+div#timer {
+  font-size: 16vw;
+  text-align: center;
+  color: #8b4513;
+}
+
+div#btns {
+  text-align: center;
 }
 
 div.btn {
   margin: 10px 5%;
   padding: 10px 30px;
-  width: 30%;
+  width: 20vw;
   text-align: center;
   font-size: 18px;
   display: inline-block;
