@@ -16,6 +16,7 @@ window.addEventListener('load', function(){
       state = 1;
       startBtn.style.backgroundColor = '#daa520';
       startBtn.style.color = '#daa520';
+      stopBtn.innerHTML = 'STOP'
       stopBtn.style.backgroundColor = '#8b4513';
       stopBtn.style.color = 'white';
 
@@ -28,10 +29,17 @@ window.addEventListener('load', function(){
       startBtn.innerHTML = 'RESTART'
       startBtn.style.backgroundColor = '#8b4513';
       startBtn.style.color = 'white';
+      stopBtn.innerHTML = 'RESET'
+
+      clearInterval(intervalID);
+    }else if(timeCount >0){
+      state = 0;
+      stopBtn.innerHTML = 'STOP'
       stopBtn.style.backgroundColor = '#daa520';
       stopBtn.style.color = '#daa520';
 
-      clearInterval(intervalID);
+      timeCount = 0;
+      timerZone.innerHTML = ('00' + Math.floor(timeCount/60)).slice(-2) + ' : ' + ('00' + timeCount%60).slice(-2);
     }
   }
 
